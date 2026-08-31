@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;600;700;800&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-sky: #00a3c8;
+  --color-sky-deep: #007a9a;
+  --color-gold: #f5c518;
+  --color-gold-deep: #c49212;
+  --color-cream: #fff4dc;
+  --color-paper: #fffdf7;
+  --color-ink: #16324a;
+  --color-muted: #4a6b7c;
+  --color-coral: #e85d4c;
+  --color-line: #d5e6ee;
+  --font-display: "Fredoka", "Trebuchet MS", sans-serif;
+  --font-sans: "Nunito", "Segoe UI", sans-serif;
+  --radius-xl: 1.5rem;
+  --shadow-card: 0 8px 24px color-mix(in oklab, var(--color-ink) 10%, transparent);
+  --shadow-pop: 0 16px 40px color-mix(in oklab, var(--color-ink) 16%, transparent);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html,
+  body,
+  #app {
+    min-height: 100dvh;
+    background: var(--color-cream);
+    color: var(--color-ink);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    line-height: 1.5;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+    line-height: 1.15;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  img {
+    user-select: none;
+  }
+}
+
+.slide-enter {
+  animation: slide-enter 400ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes slide-enter {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

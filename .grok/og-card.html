@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <style>
+    @font-face {
+      font-family: "TitleSans";
+      src: url("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf") format("truetype");
+      font-weight: 700;
+    }
+    @font-face {
+      font-family: "TitleSerif";
+      src: url("/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf") format("truetype");
+      font-weight: 700;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      width: 1200px;
+      height: 630px;
+      overflow: hidden;
+      background: #16324A;
+    }
+    .stage {
+      position: relative;
+      width: 1200px;
+      height: 630px;
+    }
+    .bg {
+      position: absolute;
+      inset: 0;
+      background: url("/art/classroom.jpg") center 42% / cover no-repeat;
+    }
+    .vignette {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 70% 65% at 50% 48%, rgba(22, 50, 74, 0.12) 0%, rgba(22, 50, 74, 0.55) 100%),
+        linear-gradient(180deg, rgba(0, 163, 200, 0.18) 0%, transparent 28%, transparent 72%, rgba(22, 50, 74, 0.35) 100%);
+    }
+    .frame {
+      position: absolute;
+      inset: 18px;
+      border: 4px solid #F5C518;
+      border-radius: 18px;
+      box-shadow: inset 0 0 0 3px #16324A, 0 0 0 3px rgba(22, 50, 74, 0.35);
+      pointer-events: none;
+    }
+    .lockup {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 720px;
+      text-align: center;
+    }
+    .plaque {
+      background: linear-gradient(180deg, rgba(255, 248, 232, 0.96) 0%, rgba(255, 236, 196, 0.94) 100%);
+      border: 5px solid #F5C518;
+      border-radius: 28px;
+      padding: 26px 40px 22px;
+      box-shadow:
+        0 0 0 4px #16324A,
+        0 16px 36px rgba(22, 50, 74, 0.45);
+    }
+    .sun {
+      width: 36px;
+      height: 36px;
+      margin: 0 auto 8px;
+      background: #F5C518;
+      border-radius: 50%;
+      box-shadow:
+        0 0 0 4px #FFF8E8,
+        0 0 0 6px #F5C518;
+    }
+    h1 {
+      font-family: "TitleSans", "DejaVu Sans", sans-serif;
+      font-weight: 700;
+      font-size: 78px;
+      line-height: 0.98;
+      color: #16324A;
+      letter-spacing: 0.01em;
+    }
+    h1 span {
+      display: block;
+    }
+    h1 .gold {
+      color: #00A3C8;
+    }
+    .rule {
+      width: 220px;
+      height: 4px;
+      margin: 12px auto 10px;
+      background: linear-gradient(90deg, transparent, #F5C518 15%, #F5C518 85%, transparent);
+      border-radius: 2px;
+    }
+    .tag {
+      font-family: "TitleSerif", "DejaVu Serif", serif;
+      font-size: 22px;
+      color: #16324A;
+      letter-spacing: 0.08em;
+    }
+  </style>
+</head>
+<body>
+  <div class="stage">
+    <div class="bg"></div>
+    <div class="vignette"></div>
+    <div class="frame"></div>
+    <div class="lockup">
+      <div class="plaque">
+        <div class="sun"></div>
+        <h1>
+          <span>Главный</span>
+          <span class="gold">закон</span>
+        </h1>
+        <div class="rule"></div>
+        <div class="tag">Конституция Казахстана</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Главный закон",
+      "hasCanvas": false,
+      "bodyTextLen": 238,
+      "bodyTextHash": "c588f54304359796834116d4198010663330235e2b7a96eb893ffffab6560db7",
+      "bodyTextPrefix": "Басты заң 1/11 КЛАССНЫЙ ЧАС · 5 КЛАСС Главный закон Казахстана К",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Главный закон",
+      "hasCanvas": false,
+      "bodyTextLen": 230,
+      "bodyTextHash": "7321d9e33bbf0afbd4c3ef337f647cb4064d6a67b5b6ec4faa53612835ea6431",
+      "bodyTextPrefix": "КЛАССНЫЙ ЧАС · 5 КЛАСС Главный закон Казахстана Конституция — ка",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

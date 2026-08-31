@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <style>
+    @font-face {
+      font-family: "TitleSans";
+      src: url("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf") format("truetype");
+      font-weight: 700;
+    }
+    @font-face {
+      font-family: "TitleSerif";
+      src: url("/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf") format("truetype");
+      font-weight: 700;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      width: 1200px;
+      height: 264px;
+      overflow: hidden;
+      background: #00A3C8;
+    }
+    .stage {
+      position: relative;
+      width: 1200px;
+      height: 264px;
+    }
+    .bg {
+      position: absolute;
+      inset: 0;
+      background: url("/art/classroom.jpg") center 38% / cover no-repeat;
+    }
+    .wash {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        90deg,
+        rgba(0, 163, 200, 0.96) 0%,
+        rgba(0, 163, 200, 0.92) 28%,
+        rgba(0, 163, 200, 0.55) 48%,
+        rgba(22, 50, 74, 0.12) 70%,
+        rgba(22, 50, 74, 0.08) 100%
+      );
+    }
+    .lockup {
+      position: absolute;
+      left: 40px;
+      top: 28px;
+      width: 520px;
+    }
+    .kicker {
+      font-family: "TitleSerif", serif;
+      font-size: 15px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #FFF8E8;
+      margin-bottom: 6px;
+    }
+    h1 {
+      font-family: "TitleSans", sans-serif;
+      font-weight: 700;
+      font-size: 52px;
+      line-height: 1.02;
+      color: #FFF8E8;
+      text-shadow: 0 2px 0 #16324A, 0 4px 10px rgba(22, 50, 74, 0.35);
+    }
+    h1 em {
+      font-style: normal;
+      color: #F5C518;
+    }
+    .rule {
+      width: 160px;
+      height: 4px;
+      margin-top: 10px;
+      background: #F5C518;
+      border-radius: 2px;
+    }
+    .mascot {
+      position: absolute;
+      right: 36px;
+      top: 18px;
+      width: 228px;
+      height: 228px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 42%;
+      border: 5px solid #F5C518;
+      box-shadow: 0 0 0 3px #16324A, 0 8px 18px rgba(22, 50, 74, 0.4);
+    }
+  </style>
+</head>
+<body>
+  <div class="stage">
+    <div class="bg"></div>
+    <div class="wash"></div>
+    <div class="lockup">
+      <div class="kicker">викторина</div>
+      <h1>Главный <em>закон</em></h1>
+      <div class="rule"></div>
+    </div>
+    <img class="mascot" src="/art/mascot.jpg" alt="" />
+  </div>
+</body>
+</html>
